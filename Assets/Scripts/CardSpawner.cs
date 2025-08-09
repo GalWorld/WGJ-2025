@@ -50,6 +50,8 @@ public class CardSpawner : MonoBehaviour
             remainingCards.RemoveAt(randomIndex);
         }
     }
+
+    
 }
 
 
