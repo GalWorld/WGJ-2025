@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class CardSpawner : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class CardSpawner : MonoBehaviour
         if (currentRound >= totalRounds)
         {
             Debug.Log("Fin de la partida");
+            EndGame();
             return;
         }
 
@@ -51,7 +53,32 @@ public class CardSpawner : MonoBehaviour
         }
     }
 
-    
+    private void EndGame()
+    {
+        PlayerStats playerStats = FindFirstObjectByType<PlayerStats>();
+
+        if (playerStats != null)
+        {
+            if (playerStats.power >= 80)
+            {
+                Debug.Log("Final 1");
+            }
+            else if (playerStats.power >= 50)
+            {
+                Debug.Log("Final 2");
+            }
+            else
+            {
+                Debug.Log("Final 3");
+            }
+        }
+        else
+        {
+            Debug.LogError("No se encontró PlayerStats para determinar el final.");
+        }
+    }
+
+
 }
 
 

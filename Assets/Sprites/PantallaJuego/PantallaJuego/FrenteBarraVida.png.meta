@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 77b2e21054c5d2649a92de218aaf41ed
+guid: 69dd9737cdcda394ea613c0576bd85a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5933413741351382349
-    second: torre_0
+      213: 1336722667406538037
+    second: FrenteBarraVida_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: torre_0
+      name: FrenteBarraVida_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 491
+        x: 17
+        y: 19
+        width: 403
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b2545983a748ada0800000000000000
-      internalID: -5933413741351382349
+      spriteID: 535baf90f2efc8210800000000000000
+      internalID: 1336722667406538037
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      torre_0: -5933413741351382349
+      FrenteBarraVida_0: 1336722667406538037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
