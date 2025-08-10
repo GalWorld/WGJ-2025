@@ -21,6 +21,7 @@ public class CardSpawner : MonoBehaviour
         if (currentRound >= totalRounds)
         {
             Debug.Log("Fin de la partida");
+            EndGame();
             return;
         }
 
@@ -51,7 +52,32 @@ public class CardSpawner : MonoBehaviour
         }
     }
 
-    
+    private void EndGame()
+    {
+        PlayerStats playerStats = FindFirstObjectByType<PlayerStats>();
+
+        if (playerStats != null)
+        {
+            if (playerStats.power >= 80)
+            {
+                Debug.Log("Final Épico: Te convertiste en la bruja suprema.");
+            }
+            else if (playerStats.power >= 50)
+            {
+                Debug.Log("Final Bueno: Superaste la prueba, pero con esfuerzo.");
+            }
+            else
+            {
+                Debug.Log("Final Malo: No lograste superar la prueba.");
+            }
+        }
+        else
+        {
+            Debug.LogError("No se encontró PlayerStats para determinar el final.");
+        }
+    }
+
+
 }
 
 
