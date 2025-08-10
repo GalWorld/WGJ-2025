@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class CardSpawner : MonoBehaviour
 {
@@ -60,15 +61,15 @@ public class CardSpawner : MonoBehaviour
         {
             if (playerStats.power >= 80)
             {
-                Debug.Log("Final Épico: Te convertiste en la bruja suprema.");
+                Debug.Log("Final 1");
             }
             else if (playerStats.power >= 50)
             {
-                Debug.Log("Final Bueno: Superaste la prueba, pero con esfuerzo.");
+                Debug.Log("Final 2");
             }
             else
             {
-                Debug.Log("Final Malo: No lograste superar la prueba.");
+                Debug.Log("Final 3");
             }
         }
         else

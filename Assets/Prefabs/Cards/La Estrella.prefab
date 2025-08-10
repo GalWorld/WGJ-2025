@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: La Estrella
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 51fecd188a2579e4e83a2213896470a5, type: 2}
+  m_sharedMaterial: {fileID: 3467299999597267922, guid: 51fecd188a2579e4e83a2213896470a5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -251,7 +251,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 406, y: 575}
+  m_SizeDelta: {x: 360, y: 520}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3489474693376611198
 CanvasRenderer:
@@ -462,8 +462,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: La esperanza brilla en lo alto.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f338f707933b5a54fb084b9addd462c0, type: 2}
+  m_sharedMaterial: {fileID: 7532478805256610953, guid: f338f707933b5a54fb084b9addd462c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

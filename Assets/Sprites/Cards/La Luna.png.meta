@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f95548b45fb6a14eaddd564846169e8
+guid: 2ebba0c7e169ba14288a29daa0adf67d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8247500064658327605
-    second: La torre_0
+      213: -7260379408515834198
+    second: La Luna_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: La torre_0
+      name: La Luna_0
       rect:
         serializedVersion: 2
         x: 9
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc77709636efa8d80800000000000000
-      internalID: -8247500064658327605
+      spriteID: aae5ad42563fd3b90800000000000000
+      internalID: -7260379408515834198
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      La torre_0: -8247500064658327605
+      La Luna_0: -7260379408515834198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
