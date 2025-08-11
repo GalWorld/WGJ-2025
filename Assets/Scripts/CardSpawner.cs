@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CardSpawner : MonoBehaviour
 {
     public List<GameObject> allCards; // Prefabs de las 12 cartas
     public Transform spawnParent;     // Donde aparecerán
     public int totalRounds = 4;
+    public Animator animator;
     private int currentRound = 0;
     private List<GameObject> remainingCards;
 
@@ -14,6 +16,7 @@ public class CardSpawner : MonoBehaviour
     {
         // Copia del mazo para no modificar el original
         remainingCards = new List<GameObject>(allCards);
+        //animator.SetTrigger("Cortinas");
         StartNextRound();
     }
 
@@ -62,20 +65,30 @@ public class CardSpawner : MonoBehaviour
             if (playerStats.power >= 80)
             {
                 Debug.Log("Final 1");
+                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
             }
             else if (playerStats.power >= 50)
             {
                 Debug.Log("Final 2");
+                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
             }
             else
             {
                 Debug.Log("Final 3");
+                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
             }
         }
         else
         {
             Debug.LogError("No se encontró PlayerStats para determinar el final.");
         }
+    }
+
+    public IEnumerator SceneLoader(string nameScene)
+    {
+        animator.SetTrigger("Cortinas");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(nameScene);
     }
 
 

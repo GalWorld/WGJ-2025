@@ -276,7 +276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Un final es solo un nuevo comienzo. Pero, \xBFPodr\xE1 renacer?"
+  m_text: "Un final es solo un nuevo comienzo. Pero, \xBFPodr\xE1s renacer?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f338f707933b5a54fb084b9addd462c0, type: 2}
   m_sharedMaterial: {fileID: 7532478805256610953, guid: f338f707933b5a54fb084b9addd462c0, type: 2}
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1495636479084036639, guid: bcaf17551209d28469adbf2eddb775f5, type: 3}
+  m_Sprite: {fileID: -1285715892309008217, guid: 97dbf2b4d078d9845b5a44064b9a52c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
