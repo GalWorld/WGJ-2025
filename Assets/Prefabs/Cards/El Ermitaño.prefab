@@ -499,10 +499,10 @@ MonoBehaviour:
   description: "La soledad trae sabidur\xEDa."
   effects:
   - type: 0
-    value: -10
+    value: -20
     isComplex: 0
   - type: 2
-    value: 30
+    value: 20
     isComplex: 0
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}

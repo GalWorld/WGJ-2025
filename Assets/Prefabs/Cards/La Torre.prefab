@@ -430,10 +430,10 @@ MonoBehaviour:
     value: 30
     isComplex: 1
   - type: 2
-    value: -10
+    value: -30
     isComplex: 0
   - type: 1
-    value: 20
+    value: 30
     isComplex: 0
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}

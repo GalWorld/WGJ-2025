@@ -53,11 +53,6 @@ public class CardControllerScript : MonoBehaviour
                 case CardEffect.EffectType.Life:
                     playerStats.life += finalValue;
                     playerStats.life = Mathf.Clamp(playerStats.life, 0, 100);
-
-                    if (playerStats.life <= 0)
-                    {
-                        GameOver();
-                    }
                     break;
 
                 case CardEffect.EffectType.Luck:
@@ -74,14 +69,7 @@ public class CardControllerScript : MonoBehaviour
         cardSpawner.StartNextRound();
     }
 
-    private void GameOver()
-    {
-        Debug.Log("GAME OVER — El jugador ha perdido.");
-        // Aquí puedes añadir tu lógica de final de partida:
-        // - Cargar otra escena
-        // - Mostrar un panel de UI
-        // - Pausar el juego, etc.
-    }
+    
 
 
 }

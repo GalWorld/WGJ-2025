@@ -499,13 +499,13 @@ MonoBehaviour:
   description: Que el azar decida tu destino.
   effects:
   - type: 0
-    value: 30
+    value: 50
     isComplex: 1
   - type: 2
-    value: 30
+    value: 50
     isComplex: 1
   - type: 1
-    value: 30
+    value: 50
     isComplex: 1
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}

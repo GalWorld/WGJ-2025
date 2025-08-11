@@ -564,9 +564,9 @@ MonoBehaviour:
   effects:
   - type: 2
     value: 10
-    isComplex: 0
+    isComplex: 1
   - type: 1
-    value: -20
+    value: -30
     isComplex: 0
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}

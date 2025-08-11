@@ -566,7 +566,7 @@ MonoBehaviour:
     value: 30
     isComplex: 1
   - type: 2
-    value: 30
+    value: 20
     isComplex: 0
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}

@@ -563,7 +563,7 @@ MonoBehaviour:
   description: "Act\xFAa impulsivamente, inocencia y libertad te gu\xEDan."
   effects:
   - type: 0
-    value: 10
+    value: 20
     isComplex: 1
   - type: 2
     value: 10

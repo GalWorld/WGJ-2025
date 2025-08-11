@@ -488,7 +488,7 @@ MonoBehaviour:
   description: "La luz suave oculta m\xE1s de lo que revela."
   effects:
   - type: 0
-    value: -10
+    value: -30
     isComplex: 0
   - type: 2
     value: 20

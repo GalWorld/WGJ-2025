@@ -427,7 +427,7 @@ MonoBehaviour:
   description: Gran potencial, pero si el truco sale mal...
   effects:
   - type: 2
-    value: 20
+    value: 30
     isComplex: 1
   - type: 1
     value: 10

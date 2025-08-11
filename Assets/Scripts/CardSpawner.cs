@@ -11,6 +11,8 @@ public class CardSpawner : MonoBehaviour
     public Animator animator;
     private int currentRound = 0;
     private List<GameObject> remainingCards;
+    public PlayerStats playerStats;
+    private bool isdead=false;
 
     void Start()
     {
@@ -18,6 +20,14 @@ public class CardSpawner : MonoBehaviour
         remainingCards = new List<GameObject>(allCards);
         //animator.SetTrigger("Cortinas");
         StartNextRound();
+    }
+
+    private void Update()
+    {
+        if (playerStats.life <= 0 && !isdead)
+        {
+            GameOver();
+        }
     }
 
     public void StartNextRound()
@@ -65,17 +75,17 @@ public class CardSpawner : MonoBehaviour
             if (playerStats.power >= 80)
             {
                 Debug.Log("Final 1");
-                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
+                StartCoroutine(SceneLoader("Final1"));
             }
             else if (playerStats.power >= 50)
             {
                 Debug.Log("Final 2");
-                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
+                StartCoroutine(SceneLoader("Final2"));
             }
             else
             {
                 Debug.Log("Final 3");
-                StartCoroutine(SceneLoader(SceneManager.GetActiveScene().name));
+                StartCoroutine(SceneLoader("Final3"));
             }
         }
         else
@@ -87,10 +97,22 @@ public class CardSpawner : MonoBehaviour
     public IEnumerator SceneLoader(string nameScene)
     {
         animator.SetTrigger("Cortinas");
+        Debug.Log("Animación");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(nameScene);
+        Debug.Log("Escena");
     }
 
+    private void GameOver()
+    {
+        isdead = true;
+        StartCoroutine(SceneLoader("GameOver"));
+        Debug.Log("GAME OVER — El jugador ha perdido.");
+        if (MusicManager.Instance != null)
+        {
+            MusicManager.Instance.PlayGameOverMusic();
+        }
+    }
 
 }
 
