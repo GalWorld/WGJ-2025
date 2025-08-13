@@ -434,6 +434,7 @@ MonoBehaviour:
     isComplex: 0
   nameText: {fileID: 0}
   descriptionText: {fileID: 0}
+  cardEffectSFX: {fileID: 8300000, guid: a058cdc52414947448ca286ff3934038, type: 3}
 --- !u!95 &6154697178791715729
 Animator:
   serializedVersion: 7

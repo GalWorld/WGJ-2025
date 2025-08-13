@@ -9,6 +9,9 @@ public class MusicManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip mainTheme;
     public AudioClip gameOverTheme;
+    public AudioClip CatTheme;
+    public AudioClip AnimalTheme;
+    public AudioSource Brillitos;
 
     private void Awake()
     {
@@ -34,6 +37,16 @@ public class MusicManager : MonoBehaviour
     public void PlayGameOverMusic()
     {
         StartCoroutine(FadeOutAndPlayNew(gameOverTheme));
+    }
+
+    public void PlayCatMusic()
+    {
+        StartCoroutine(FadeOutAndPlayNew(CatTheme));
+    }
+
+    public void PlayAnimalMusic()
+    {
+        StartCoroutine(FadeOutAndPlayNew(AnimalTheme));
     }
 
     private IEnumerator FadeOutAndPlayNew(AudioClip newClip)
@@ -62,6 +75,14 @@ public class MusicManager : MonoBehaviour
     public void PlayMainTheme()
     {
         StartCoroutine(FadeOutAndPlayNew(mainTheme));
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        if (clip != null && Brillitos != null)
+        {
+            Brillitos.PlayOneShot(clip);
+        }
     }
 }
 

@@ -10,6 +10,7 @@ public class CardControllerScript : MonoBehaviour
     public TextMeshProUGUI descriptionText;
     private PlayerStats playerStats;
     private CardSpawner cardSpawner;
+    public AudioClip cardEffectSFX;
 
     public void SetupCard(string name, string desc)
     {
@@ -35,6 +36,10 @@ public class CardControllerScript : MonoBehaviour
 
     public void ApplyEffects()
     {
+        if (cardEffectSFX != null)
+        {
+            MusicManager.Instance.PlaySFX(cardEffectSFX);
+        }
         foreach (CardEffect effect in effects)
         {
             float finalValue = effect.value;

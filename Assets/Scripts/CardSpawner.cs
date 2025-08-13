@@ -12,7 +12,7 @@ public class CardSpawner : MonoBehaviour
     private int currentRound = 0;
     private List<GameObject> remainingCards;
     public PlayerStats playerStats;
-    private bool isdead=false;
+    private bool isdead = false;
 
     void Start()
     {
@@ -76,16 +76,28 @@ public class CardSpawner : MonoBehaviour
             {
                 Debug.Log("Final 1");
                 StartCoroutine(SceneLoader("Final1"));
+                if (MusicManager.Instance != null)
+                {
+                    MusicManager.Instance.PlayCatMusic();
+                }
             }
             else if (playerStats.power >= 50)
             {
                 Debug.Log("Final 2");
                 StartCoroutine(SceneLoader("Final2"));
+                if (MusicManager.Instance != null)
+                {
+                    MusicManager.Instance.PlayAnimalMusic();
+                }
             }
             else
             {
                 Debug.Log("Final 3");
                 StartCoroutine(SceneLoader("Final3"));
+                if (MusicManager.Instance != null)
+                {
+                    MusicManager.Instance.PlayAnimalMusic();
+                }
             }
         }
         else

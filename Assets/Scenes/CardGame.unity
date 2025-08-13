@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Escoge Tu Destino
+  m_text: Escoge El Destino
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 51fecd188a2579e4e83a2213896470a5, type: 2}
   m_sharedMaterial: {fileID: 3467299999597267922, guid: 51fecd188a2579e4e83a2213896470a5, type: 2}
